@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Mooli&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 70px;
+  display: flex;
+  padding: 0px 10%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 15%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+.nav {
+  width: 30%;
+  height: 70px;
+}
+
+.nav-links {
+  height: 70px;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #1647da;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #1647da;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  color: #0a32a8;
+}
+.nav-links a {
+  z-index: 10;
+  position: relative; 
+}
+.nav-links a {
+  pointer-events: auto;
+}
+
+.hero {
+  width: 100%;
+  height: 700px;
+  background-color: bisque;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  width: 60%;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+
+.t1 {
+  font-size: 60px;
+}
+
+.t2 {
+  font-size: 3rem;
+  font-weight: 450;
+  color: #1647da;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.t2:hover {
+  color: blue;
+
+  font-weight: 1000px;
+  transform: scale(1.1);
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  0% {
+    border-color: black;
+  }
+}
+
+.Info {
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  white-space: nowrap;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 5rem;
+  margin: 0 auto;
+  letter-spacing: 0em;
+  animation: typing 3.5s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+.abc {
+  font-size: 20px;
+  height: 50px;
+}
+
+.cta {
+  padding: 16px 40px;
+  margin-right: 15px;
+  font-size: 20px;
+  margin-top: 35px;
+  background-color: #dcdcee;
+  color: white;
+  border: 2px solid #5b5bb0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cta:hover {
+  background-color: #5b5bb0;
+  color: #000000;
+}
+.cta a {
+  z-index: 15;
+  position: relative;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+#about-me {
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+.profile-picture img {
+  width: 130px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-me-content {
+  flex: 1;
+}
+
+.about-me-content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.about-me-content p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.personal-details p {
+  margin: 5px 0;
+}
+
+.personal-details p strong {
+  color: #333;
+}
+
+/* project css  */
+
+.project {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.project .icon {
+  font-size: 40px;
+  margin-bottom: 2px;
+  color: #6c63ff;
+}
+
+.project h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.project p:first-of-type {
+  margin-top: 0;
+}
+
+.project p:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: #000000;
+  text-align: center;
+}
+
+.section-child {
+  width: 100%;
+  padding: 30px 0px;
+  margin-top: 30px;
+  display: flex;
+  column-gap: 4%;
+}
+
+.project {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  row-gap: 15px;
+  box-shadow: 0 0 2px gray;
+  border-radius: 10px;
+}
+
+.icon {
+  padding: 50px;
+  font-size: 70px;
+  align-self: center;
+  color: gray;
+}
+
+.number {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.tag {
+  font-size: 18px;
+}
+
+/*Skills*/
+
+#skills {
+  padding: 50px 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+#section-title {
+  font-size: 2.5em;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+#section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #ff6600;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.skill-section-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-section-child h1 {
+  background: #444;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  font-size: 1.2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.skill-section-main h1:hover {
+  background: #ff6600;
+  transform: translateY(-10px);
+}
+
+.skill-section-main h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-section-main h1:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .skill-section-main {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skill-section-main h1 {
+    font-size: 1.5em;
+  }
+}
+
+/*Achievements*/
+#achieve {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.achieve-child {
+  background-color: #dcdcee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.achieve-child:hover {
+  transform: translateY(-10px);
+  background-color: #7f7fd8c1;
+  color: white;
+}
+
+.achieve-child h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.achieve-child .content {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achieve-child .content p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.achieve-child .content u {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Background colors for each achievement */
+.bg1 {
+  background-color: #ffe4e1; 
+}
+
+.bg2 {
+  background-color: #e6e6fa; 
+}
+
+.bg3 {
+  background-color: #f0fff0; 
+}
+
+.bg4 {
+  background-color: #f0f8ff; 
+}
